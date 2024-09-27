@@ -2,7 +2,7 @@
   "name": "builder",
   "scripts": {
     "dev": "dotenv -e ./.env -e ../../.env -- next dev -p 3000",
-    "build": "dotenv -e ./.env -e ../../.env -- next build",
+    "build": "dotenv -e ./.env -e ../../.env -- next build --no-lint",
     "start": "dotenv -e ./.env -e ../../.env -- next start",
     "test": "dotenv -e ./.env -e ../../.env -- playwright test",
     "test:show-report": "playwright show-report src/test/reporters",
