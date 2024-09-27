@@ -1,6 +1,6 @@
 import { Seo } from "@/components/Seo";
 import { TextLink } from "@/components/TextLink";
-import { Heading, Text, VStack } from "@chakra-ui/react";
+import { Heading, Image, Text, VStack } from "@chakra-ui/react";
 import { T, useTranslate } from "@tolgee/react";
 import { useRouter } from "next/router";
 import { SignInForm } from "./SignInForm";
@@ -28,6 +28,14 @@ export const SignInPage = ({ type }: Props) => {
           throw new Error("Sentry is working");
         }}
       >
+        <Image
+          src="icons/omnix.png"
+          // boxSize="30px"
+          // objectFit="cover"
+          style={{ height: "40px" }}
+          alt="typebot icon"
+          rounded="10%"
+        />
         {type === "signin"
           ? t("auth.signin.heading")
           : t("auth.register.heading")}

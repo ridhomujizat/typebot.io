@@ -5,7 +5,7 @@ import { ParentModalProvider } from "@/features/graph/providers/ParentModalProvi
 import { useWorkspace } from "@/features/workspace/WorkspaceProvider";
 import { WorkspaceDropdown } from "@/features/workspace/components/WorkspaceDropdown";
 import { WorkspaceSettingsModal } from "@/features/workspace/components/WorkspaceSettingsModal";
-import { Button, Flex, HStack, useDisclosure } from "@chakra-ui/react";
+import { Button, Flex, HStack, Image, useDisclosure } from "@chakra-ui/react";
 import { useTranslate } from "@tolgee/react";
 import { isNotDefined } from "@typebot.io/lib/utils";
 import Link from "next/link";
@@ -37,10 +37,13 @@ export const DashboardHeader = () => {
         flex="1"
       >
         <Link href="/typebots" data-testid="typebot-logo">
-          <EmojiOrImageIcon
-            boxSize="30px"
-            icon={workspace?.icon}
-            defaultIcon={HardDriveIcon}
+          <Image
+            src="icons/omnix.png"
+            // boxSize="30px"
+            // objectFit="cover"
+            style={{ height: "40px" }}
+            alt="typebot icon"
+            rounded="10%"
           />
         </Link>
         <HStack>

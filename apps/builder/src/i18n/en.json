@@ -52,7 +52,7 @@
   "auth.signinErrorToast.description": "Sign ups are disabled.",
   "auth.signinErrorToast.title": "Unauthorized",
   "auth.signinErrorToast.tooManyRequests": "Too many requests. Try again later.",
-  "auth.signin.heading": "Sign In",
+  "auth.signin.heading": "Sign In Chatbot Omnix",
   "auth.signin.noAccountLabel.link": "Sign up for free",
   "auth.signin.noAccountLabel.preLink": "Don't have an account?",
   "auth.socialLogin.azureButton.label": "Continue with {azureProviderName}",
